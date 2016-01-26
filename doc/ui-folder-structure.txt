@@ -1,0 +1,9 @@
+ui  ( under ui you will have multple modules - site,crms, etc...)
+----- site -> web portal code.
+	 -------------- assets - all public assets.
+     ------------- img | images  
+     ------------- lib Any javascrip frameworks (bootstrap 3.6,jquery 1.11+,other plugins)
+     ------------- css - stylesheets for each page 
+     ------------- fonts - fonts used for site - font awsome
+     ------- js : All script specific to page/view/component.
+     ------- views : all html pages.

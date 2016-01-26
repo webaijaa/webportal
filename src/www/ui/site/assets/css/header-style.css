@@ -1,0 +1,38 @@
+       
+        .facebook { background: #3280e7; }
+        .facebook:hover { background: #134fa0; }
+        .twitter { background: #32c8de;}
+        .twitter:hover {    background: #188392;}
+        .youtube {background: #ed5441;}
+        .youtube:hover {    background: #b72411;}
+        .register {background: #32c8de;}
+        .register:hover {background: #188392;}
+        /* Ui Nav */
+        /* Icon */
+        .ui-5  .ui-nav  i{
+            height:40px;
+            width:40px;
+            line-height:40px;
+            border-radius:100%;
+            text-align:center;
+            color:#fff;
+            font-size:18px;
+           /* position:absolute;*/
+            -webkit-transition:all 2s;
+            -moz-transition:all 2s;
+            -o-transition:all 2s;
+            transition:all 2s;
+        }
+        @media (max-width:480px){
+            .ui-5  .ui-nav i{
+               /* position:static;*/
+                margin:5px;
+            }
+        }
+        /* Icon over Transition effect */
+        .ui-5 .ui-nav  i:hover{
+            -webkit-transition:all 2s;
+            -moz-transition:all 2s;
+            -o-transition:all 2s;
+            transition:all 2s;
+        }
