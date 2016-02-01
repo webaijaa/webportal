@@ -218,15 +218,6 @@ $(window).load(function() {
 
      </div>
      <div class="row">
-        <section class="col-md-12" style="padding:0">
-            <article class="contentSpan">
-                <div class="holder">
-                    <h2>Our team</h2>
-                    <em></em>
-                </div>
-
-            </article>
-        </section>
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -240,7 +231,7 @@ $(window).load(function() {
               <div class="carousel-inner ui-x" role="listbox">
                 <div class="item active">
                     <div class="carousel-caption" style="position: static;">
-                            <h3>Web Support Team</h3>
+                            <h4>Web Support Team</h4>
                             <p>Web Support Team of AIJAA.</p>
                     </div>
                    <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
@@ -473,7 +464,7 @@ $(window).load(function() {
 </div>
 </div>
 <!--footer-->
-  <?php include 'footer.php';?> 
+  <?php include 'footer.php';?>
 
 <!-- Modal -->
 <div id="loginModal" class="modal fade" role="dialog">
