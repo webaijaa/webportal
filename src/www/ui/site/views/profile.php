@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />	
+	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>AIJAA - All India Jnv alumni Network</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="../assets/css/font-awesome.css">
 <link rel="stylesheet" href="../assets/css/login-style.css">
 <link rel="stylesheet" href="../assets/css/header-style.css">
-<link rel="stylesheet" href="../assets/css/bootstrap-slider.css"  />   
+<link rel="stylesheet" href="../assets/css/bootstrap-slider.css"  />
 <link rel="stylesheet" href="../assets/css/profile-wizard.css"/>
-<link rel="stylesheet" type="text/css" href="../assets/css/jquery-gmaps-latlon-picker.css" /> 
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery-gmaps-latlon-picker.css" />
 
 <!--JS-->
 <script src="../assets/lib/jquery/1.11.3/jquery-1.11.3.min.js"></script>
@@ -32,67 +32,14 @@
 <div class="global">
 <section class="margBot1">
     <!--header-->
-    <header>
-        <div class="container">
-            <div class="row">
-                <article class="span12 linkBox">
-                    <div class = "ui-5">
-                        <ul class="ui-nav">
-                            <li><a href="profile.html" ><i class="fa fa-user register"></i></a></li>
-                            <li><a href="#facebook" class="active"><i class="fa fa-facebook facebook"></i></a></li>
-                            <li><a href="#twiter"><i class="fa fa-twitter twitter"></i></a></li>                                     
-                            <li><a href="#youtube"><i class="fa fa-youtube youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="span12 logoBox">
-                    <div>
-                        <div >
-                            <img src="../assets/img/logo.png" alt="" class="logo" ></a>
-                        </div>
-                        <article class="telBox">
-                            <p class="title1">A.I.J.A.A</p>
-                            <p class="title2">(AIJAA) ALL INDIA JNV ALUMNI ASSOCIATION</p>
-                        </article>
-                    </div>
-                </article>
-                <article class="span12">
-                    <div class="navbar navbar_ clearfix">
-                        <div class="navbar-inner">      
-                            <div class="clearfix">
-                                <div class="nav-collapse nav-collapse_">
-                                    <ul class="nav sf-menu clearfix">
-                                        <li class="active"><a href="index.html">Home</a></li> 
-                                        <li ><a href="index-1.html" class="btn btn-info btn-lg" data-toggle="modal" data-target="#loginModal">Login<span></span></a></li> 
-                                        <li><a href="index-2.html">Activities</a></li>
-                                        <li><a href="index-4.html">Locations</a></li>
-                                        <li><a href="index-3.html">About Us</a></li>                    
-                                    </ul>
-                                </div> 
-                            </div>
-                        </div> 
-                         <div class='main-drop'>
-                        <select name='link' OnChange="window.location.href=$(this).val();">
-                            <option value='index.html'>Home</option>
-                            <option value='login.html'>Login</option>
-                            <option value='register.html'>Register</option> 
-                            <option value='activities.html'>Activities</option>
-                            <option value='aboutus.html'>About Us</option>                         
-                        </select> 
-                        </div>
- 
-                    </div>
-                </article>
-            </div>
-        </div>
-    </header>
+    <?php include 'common.php';?>
 </section>
         <!--   Big container   -->
     <div class="container">
         <div class="row">
-        <div class="col-sm-12">           
-            <!--      Wizard container        -->   
-            <div class="wizard-container">                 
+        <div class="col-sm-12">
+            <!--      Wizard container        -->
+            <div class="wizard-container">
                 <div class="card wizard-card ct-wizard-navyblue" id="wizardProfile">
                     <form action="" method="">
                 <!--        You can switch "ct-wizard-orange"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
@@ -108,7 +55,7 @@
                             <li><a href="#address" data-toggle="tab"><i class="fa fa-home"></i>&nbsp;Address</a></li>
                             <li><a href="#locate" data-toggle="tab"><i class="fa fa-map-marker"></i></i>&nbsp;Locate <i class="fa fa-globe"></i></a></li>
                         </ul>
-                        
+
                         <div class="tab-content">
                             <div class="tab-pane" id="about">
                               <div class="row">
@@ -121,7 +68,7 @@
                                           </div>
                                           <h6>Choose Picture</h6>
                                       </div>
-                                      <div class="form-group">                                         
+                                      <div class="form-group">
                                               <label>Blood Group</label><br>
                                               <select name="blood" class="form-control">
                                                   <option value="">Select</option>
@@ -155,7 +102,7 @@
                                       </div>
 
                                 <div class="form-group">
-                                    <label class="control-label">Your Jnv State</label>                                   
+                                    <label class="control-label">Your Jnv State</label>
                                        <select class="form-control" id="state"
                         <option value="">------------Select State------------</option>
                         <option value="andaman">Andaman and Nicobar Islands</option>
@@ -200,34 +147,34 @@
                                          <input type='text' class="form-control"  name='district' value='' placeholder="District"/>
                                       </div>
                                       <div class="form-group">
-                                          <label>Batch <small>(required)</small></label>   
-                                          <input type="number" class="form-control" id="batch" name="batch" placeholder="Enter the batch" value=""/>                                  
-                                          <!--<input class="col-sm-6 " name="batch" id="batch" data-slider-id='ex1Slider' type="text" value="0" data-slider-min="0" data-slider-max="24" data-slider-step="1" data-slider-value="0" />-->    
+                                          <label>Batch <small>(required)</small></label>
+                                          <input type="number" class="form-control" id="batch" name="batch" placeholder="Enter the batch" value=""/>
+                                          <!--<input class="col-sm-6 " name="batch" id="batch" data-slider-id='ex1Slider' type="text" value="0" data-slider-min="0" data-slider-max="24" data-slider-step="1" data-slider-value="0" />-->
                                       </div>
-                                      
+
                                     </div>
                                   <div class="col-sm-5">
                                       <div class="form-group">
                                           <label>Gender</label><br>
                                           <select name="gender" class="form-control">
-                                              <option value="">Select</option>                                            
+                                              <option value="">Select</option>
                                               <option value="male">Male </option>
                                               <option value="female">Female </option>
-                                              <option value="other">Other </option>                                              
+                                              <option value="other">Other </option>
                                           </select>
                                       </div>
                                       <div class="form-group">
                                           <label class="control-label">Alias <small>(required)</small></label>
                                           <input name="alias" type="text" class="form-control" value="" placeholder="LVB...">
-                                      </div>  
+                                      </div>
                                       <div class="form-group">
                                         <label>First Name <small>(required)</small></label>
                                         <input name="firstname" type="text" class="form-control" value="" placeholder="l...">
-                                       </div>  
+                                       </div>
                                       <div class="form-group">
                                         <label>Last Name <small>(required)</small></label>
                                         <input name="lastname" type="text" class="form-control" value="" placeholder="LVB...">
-                                      </div>                                      
+                                      </div>
                                       <div class="form-group">
                                         <label>Phone<small>(required)</small></label>
                                         <input name="phone1" type="text" class="form-control" value="" placeholder="Primary">
@@ -244,8 +191,8 @@
                                           <label>ISD<small></small></label>
                                           <input name="isd2" type="text" value="91" class="form-control" placeholder="91">
                                       </div>
-                                  </div>                                 
-                               
+                                  </div>
+
                               </div>
                             </div>
                             <div class="tab-pane" id="account">
@@ -269,7 +216,7 @@
                                                     <i class="fa fa-institution"></i>
                                                 </div>
                                                 <h6>Studying</h6>
-                                            </div>                                            
+                                            </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="choice" data-toggle="wizard-checkbox">
@@ -278,12 +225,12 @@
                                                     <i class="fa fa-search"></i>
                                                 </div>
                                                 <h6>Searching for job</h6>
-                                            </div>                                            
+                                            </div>
                                         </div>
                                         <div class="col-sm-12">
                                             <h4 class="info-text"> Qualifications </h4>
                                         </div>
-                                        <div class="col-sm-12 ">                                                                                      
+                                        <div class="col-sm-12 ">
                                                 <div class="form-group col-sm-6">
                                                     <label>Highest Education</label><br>
                                                     <select name="degree" class="form-control">
@@ -299,12 +246,12 @@
                                                         <option value="plustwo">Plus Two</option>
                                                         <option value="ot"> Others</option>
                                                     </select>
-                                                </div>  
+                                                </div>
                                                 <div class="form-group col-sm-6">
                                                     <label>Stream</label>
                                                     <input type="text" class="form-control" placeholder="BSC Micro bilogy">
                                                 </div>
-                                          
+
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-group col-sm-6">
@@ -333,10 +280,10 @@
                                                     <option value="ot"> Others</option>
                                                 </select>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="col-sm-12 ">
-                                           
+
                                             <div class="form-group col-sm-6">
                                                 <label>Designation</label>
                                                 <input type="text" name="desig" class="form-control" name="designation" placeholder="Manager">
@@ -345,10 +292,10 @@
                                                 <label>Work Description</label>
                                                 <input type="text" class="form-control" name="workdesc" placeholder="Human resource management,admin">
                                             </div>
-                                        </div> 
-                                           
-                                               
-                                             
+                                        </div>
+
+
+
                                         <div class="col-sm-12 ">
                                             <div class="form-group col-sm-6">
                                                 <label>City</label>
@@ -363,7 +310,7 @@
                                                     <option value="ot"> Other</option>
                                                 </select>
                                             </div>
-                                        </div>   
+                                        </div>
                                         <div class="col-sm-12 ">
                                             <div class="form-group col-sm-6">
                                                 <label>Country</label><br>
@@ -383,8 +330,8 @@
                                                 <label>Other Country</label><br>
                                                 <input name="othercountry" type="text" class="form-control" placeholder="Srilanka">
                                             </div>
-                                        </div>   
-                                                                         
+                                        </div>
+
                                 </div>
                             </div>
                             </div>
@@ -410,13 +357,13 @@
                                             <label>City</label>
                                             <input name="housecity" type="text" class="form-control" placeholder="Hyderabad">
                                           </div>
-                                    </div>                                   
+                                    </div>
                                     <div class="col-sm-5">
                                          <div class="form-group">
                                             <label>State</label><br>
                                              <select name="housestate" class="form-control">
                                                 <option value="ts"> Telangana </option>
-                                                <option value="ap"> Andhra Pradesh </option>                                               
+                                                <option value="ap"> Andhra Pradesh </option>
                                                 <option value="...">...</option>
                                             </select>
                                           </div>
@@ -434,7 +381,7 @@
                                                 <option value="au"> Australia</option>
                                                 <option value="ot"> others</option>
                                             </select>
-                                        </div>                                       
+                                        </div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group">
@@ -448,7 +395,7 @@
                                             <label>Email <small>(required)</small></label>
                                             <input name="email" type="email" class="form-control" value="" placeholder="nomad@ayushguru.com">
                                         </div>
-                                    </div> 
+                                    </div>
 
                                     <div class="form-group">
                                         <div class="form-group col-sm-10 col-sm-offset-1">
@@ -471,7 +418,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                       
+                            </div>
                             <div class="tab-pane" id="locate">
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -488,11 +435,11 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
-                                        <div class="form-group">                                           
+                                        <div class="form-group">
                                             <input type="button" class="gllpSearchButton" onclick="resizeWindow()" value="Search">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="gllpMap col-sm-12">Google Maps</div>
 
                                     <div class="col-sm-5">
@@ -518,23 +465,23 @@
                                             <label>Update Map</label><br>
                                             <input type="button" class="gllpUpdateButton" onclick="resizeWindow()" value="Refresh">
                                         </div>
-                                    </div>                              
+                                    </div>
                                 </fieldset>
                                 </div>
-                           
+
                          </div>
                         <div class="wizard-footer">
                             <div class="pull-right">
                                 <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
                                 <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
-        
+
                             </div>
-                            
+
                             <div class="pull-left">
                                 <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
                             </div>
                             <div class="clearfix"></div>
-                        </div>	
+                        </div>
                     </form>
                 </div>
             </div> <!-- wizard container -->
@@ -542,21 +489,21 @@
         </div><!-- end row -->
      <div class="footer">
         <div class="container">
-            
+
         </div>
     </div>
 </div>
 </div>
 </body>
-  
-	
-		
+
+
+
 	<!--   plugins 	 -->
 	<script src="../assets/lib/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-	
+
     <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
 	<script src="../assets/lib/jquery.validate.min.js"></script>
-	
+
     <!--  methods for manipulating the profile wizard and the validation -->
 	<script src="../js/profile.js"></script>
 
@@ -566,7 +513,7 @@
 
     //var batch = $("#batch").slider({ tooltip: 'always' });
 
-     
+
 
         $("#dobmonth").slider({
             tooltip: 'always'
@@ -576,20 +523,20 @@
         });
         $("#dobyear").slider({
             tooltip: 'always'
-        });    
+        });
 
         function resizeWindow() {
             window.dispatchEvent(new Event('resize'));
         }
 
         function setBatchValue(e) {
-         
+
             // Call a method on the slider
            var value = batch.getValue();
             document.getElementById("batchval").value = value;
             console.log("Batch value is", value);
         }
-     
+
 </script>
 </html>
 
