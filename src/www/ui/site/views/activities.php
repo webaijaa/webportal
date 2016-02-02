@@ -106,8 +106,28 @@ $(window).load(function() {
 <!--content-->
 
 <div class="container">
-    <div class="row">
-        <SECTION >
+    <div class="row" >
+      <section class="col-md-4" >
+          <article class="contentSpan" >
+              <div class="holder">
+                  <h2>Activities</h2>
+                  <em></em>
+              </div>
+              <div class="contentHolder" style="height:360px">
+                  <ul class="list2" >
+                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Carrer Guidence</a></div></li>
+                      <li ><span class="fa fa-hand-o-right"></span>
+                      <div><a href="#">PAn India Job Mela</a></div></li>
+                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Blood Donation Drives</a></div></li>
+                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Health Camps</a></div></li>
+                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Knowledge Bank : Learing Resources</a></div></li>
+                      <li><span class="fa fa-hand-o-right last" ></span><div><a href="#">National Integration Mission</a></div></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">read more</a>
+              </div>
+          </article>
+      </section>
+        <SECTION class="col-md-8">
                             <H1>ABOUT</H1>
                             <h3>AIJAA is a fast-growing, innovative Navodaya students association</h3>
                             <p>Managing Director <a href="/team/richard-jennis">Richard Jennis</a> and Technical Director <a href="/team/stephen-tang">Stephen Tang</a> founded the company in 2008, right at the start of the credit crunch, which many thought was a huge risk.  But of course, the risk paid off and our list of clients has grown quickly.  We've also had to move office three times to accommodate our rapidly expanding team.</p>
@@ -120,11 +140,12 @@ $(window).load(function() {
         </SECTION>
 
 
+
     </div>
 </div>
 <div class="container padBot">
     <div class="row">
-        <section class="col-md-4" >
+        <section class="col-md-6" >
             <div class="banner2" style="height:155px">
                 <p class="title1"> About Us </p>
                 <p class="title2"> AIJAA is a fast-growing, innovative Student group from all India Jawahar Navodaya Vidyalayas.</p>
@@ -139,27 +160,8 @@ $(window).load(function() {
 
 
         </section>
-        <section class="col-md-4" >
-            <article class="contentSpan" >
-                <div class="holder">
-                    <h2>Activities</h2>
-                    <em></em>
-                </div>
-                <div class="contentHolder" style="height:360px">
-                    <ul class="list2" >
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Carrer Guidence</a></div></li>
-                        <li ><span class="fa fa-hand-o-right"></span>
-                        <div><a href="#">PAn India Job Mela</a></div></li>
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Blood Donation Drives</a></div></li>
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Health Camps</a></div></li>
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Knowledge Bank : Learing Resources</a></div></li>
-                        <li><span class="fa fa-hand-o-right last" ></span><div><a href="#">National Integration Mission</a></div></li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">read more</a>
-                </div>
-            </article>
-        </section>
-        <section class="col-md-4">
+
+        <section class="col-md-6">
             <article class="contentSpan"  >
                 <div class="holder">
                     <h2>News & Events</h2>
