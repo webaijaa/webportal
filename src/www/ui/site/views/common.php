@@ -27,28 +27,4 @@
                     <div class="navbar-inner">
                         <div class="clearfix">
                             <div class="nav-collapse nav-collapse_">
-                                <ul class="nav col-md-12  clearfix">
-                                    <li class="active"><a href="index.php">Home</a></li>
-                                    <li ><a href="index-1.html" class="btn btn-info btn-lg" data-toggle="modal" data-target="#loginModal">Login<span></span></a></li>
-                                    <li><a href="activities.php">Activities</a></li>
-                                    <li><a href="aboutus.php">About Us</a></li>
-                                    <li><a href="contact.php" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contactModal">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                     <div class='main-drop'>
-                    <select name='link' OnChange="window.location.href=$(this).val();">
-                        <option value='index.php'>Home</option>
-                        <option value='login.php'>Login</option>
-                        <option value='activities.php'>Activities</option>
-                        <option value='aboutus.php'>About Us</option>
-                        <option value='contact.php'>Contact Us</option>
-                    </select>
-                    </div>
-
-                </div>
-            </article>
-        </div>
-    </div>
-</header>
+                                

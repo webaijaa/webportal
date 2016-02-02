@@ -94,6 +94,14 @@ $(window).load(function() {
 <section class="margBot1">
     <!--header-->
     <?php include 'common.php';?>
+    <ul class="nav col-md-12  clearfix">
+        <li ><a href="index.php">Home</a></li>
+        <li ><a href="index-1.html" class="btn btn-info btn-lg" data-toggle="modal" data-target="#loginModal">Login<span></span></a></li>
+        <li><a href="activities.php">Activities</a></li>
+        <li class="active"><a href="aboutus.php">About Us</a></li>
+        <li><a href="contact.php" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contactModal">Contact Us</a></li>
+    </ul>
+    <?php include 'later.php';?>
 </section>
 <!--content-->
 
