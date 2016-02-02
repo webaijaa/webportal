@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="../assets/css/header-style.css">
 <link rel="stylesheet" href="../assets/css/team-style.css">
 <!-- Owl carousel -->
-<link rel="stylesheet" href="../assets/css/owl.carousel.css">     
+<link rel="stylesheet" href="../assets/css/owl.carousel.css">
 <!--JS-->
 <script src="../assets/lib/jquery/1.11.3/jquery-1.11.3.min.js"></script>
 <script src="../assets/lib/superfish.js"></script>
@@ -46,21 +46,21 @@ $(window).load(function() {
         itemWidth: 253,
         itemMargin: 1,
         asNavFor: '#flexslider'
-      });                                       
+      });
     $('#flexslider').flexslider({
-        animation: "slide",         
-        slideshow: true,            
+        animation: "slide",
+        slideshow: true,
         slideshowSpeed: 7000,
-        animationDuration: 600,             
+        animationDuration: 600,
         prevText: "",
         nextText: "",
         controlNav: false,
-        sync: "#slides-pagination"                  
-    })                  
+        sync: "#slides-pagination"
+    })
 })
-</script> 
+</script>
 <!--[if lt IE 8]>
-        <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+        <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
 <![endif]-->
 <!--[if lt IE 9]>
   <link rel="stylesheet" href="css/ie.css">
@@ -93,67 +93,14 @@ $(window).load(function() {
 <div class="global">
 <section class="margBot1">
     <!--header-->
-    <header>
-        <div class="container">
-            <div class="row">
-                <article class="col-md-12 linkBox">
-                    <div class = "ui-5">
-                        <ul class="ui-nav">
-                            <li><a href="profile.html" ><i class="fa fa-user register"></i></a></li>
-                            <li><a href="https://www.facebook.com/AIJAAIndia" class="active"><i class="fa fa-facebook facebook"></i></a></li>
-                            <li><a href="https://twitter.com/aijaaindia"><i class="fa fa-twitter twitter"></i></a></li>                                  
-                            <li><a href="https://www.youtube.com/watch?v=a2DsJJSfHnc"><i class="fa fa-youtube youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="col-md-12 logoBox">
-                    <div>
-                        <div >
-                            <img src="../assets/img/logo.png" alt="" class="logo" ></a>
-                        </div>
-                        <article class="telBox">                        
-                            <p class="title1">A.I.J.A.A</p>
-                            <p class="title2">(AIJAA) ALL INDIA JNV ALUMNI ASSOCIATION</p>
-                        </article>
-                    </div>
-                </article>
-                <article class="col-md-12">
-                    <div class="navbar navbar_ clearfix">
-                        <div class="navbar-inner">      
-                            <div class="clearfix">
-                                <div class="nav-collapse nav-collapse_">
-                                    <ul class="nav col-md-12  clearfix">
-                                        <li ><a href="index.html">Home</a></li> 
-                                        <li ><a href="index-1.html" class="btn btn-info btn-lg" data-toggle="modal" data-target="#loginModal">Login<span></span></a></li> 
-                                        <li><a href="activities.html">Activities</a></li>                                       
-                                        <li class="active"><a href="aboutus.html">About Us</a></li>   
-                                        <li><a href="contact.html" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contactModal">Contact Us</a></li>                     
-                                    </ul>
-                                </div> 
-                            </div>
-                        </div> 
-                         <div class='main-drop'>
-                        <select name='link' OnChange="window.location.href=$(this).val();">
-                            <option value='index.html'>Home</option>
-                            <option value='login.html'>Login</option>                            
-                            <option value='activities.html'>Activities</option>
-                            <option value='aboutus.html'>About Us</option>
-                            <option value='contact.html'>Contact Us</option>                           
-                        </select> 
-                        </div>
- 
-                    </div>
-                </article>
-            </div>
-        </div>
-    </header>
+    <?php include 'common.php' ;?>
 </section>
 <!--content-->
 
 <div class="container">
     <div class="row">
         <SECTION >
-                            <H1>ABOUT</H1>                          
+                            <H1>ABOUT</H1>
                             <h3>AIJAA is a fast-growing, innovative Navodaya students association</h3>
                             <p>Managing Director <a href="/team/richard-jennis">Richard Jennis</a> and Technical Director <a href="/team/stephen-tang">Stephen Tang</a> founded the company in 2008, right at the start of the credit crunch, which many thought was a huge risk.  But of course, the risk paid off and our list of clients has grown quickly.  We've also had to move office three times to accommodate our rapidly expanding team.</p>
                             <p><a href="/team/claire-thorpe">Claire Thorpe</a> joined the agency as Consultancy Director in 2010, which meant that we could expand our services to include <a href="/pay-per-click-marketing-ppc">online marketing</a>, <a href="/search-engine-optimisation-seo">SEO</a>, social media and <a href="/user-experience-research-ux-consultancy">user experience</a> projects.</p>
@@ -171,7 +118,7 @@ $(window).load(function() {
     <div class="row">
         <section class="col-md-4" >
             <div class="banner2" style="height:155px">
-                <p class="title1"> About Us </p>                        
+                <p class="title1"> About Us </p>
                 <p class="title2"> AIJAA is a fast-growing, innovative Student group from all India Jawahar Navodaya Vidyalayas.</p>
             </div>
             <div class="banner" style="height:255px">
@@ -181,7 +128,7 @@ $(window).load(function() {
                 <span><span class="fa fa-hand-o-right">&nbsp;</span>Establish national wide network for knowledge sharing and activities</span><br>
                 </p>
             </div>
-           
+
 
         </section>
         <section class="col-md-4" >
@@ -198,7 +145,7 @@ $(window).load(function() {
                         <li><span class="fa fa-hand-o-right"></span><div><a href="#">Blood Donation Drives</a></div></li>
                         <li><span class="fa fa-hand-o-right"></span><div><a href="#">Health Camps</a></div></li>
                         <li><span class="fa fa-hand-o-right"></span><div><a href="#">Knowledge Bank : Learing Resources</a></div></li>
-                        <li><span class="fa fa-hand-o-right last" ></span><div><a href="#">National Integration Mission</a></div></li>                    
+                        <li><span class="fa fa-hand-o-right last" ></span><div><a href="#">National Integration Mission</a></div></li>
                     </ul>
                     <a href="#" class="btn btn-primary">read more</a>
                 </div>
@@ -212,28 +159,28 @@ $(window).load(function() {
                 </div>
                 <div class="contentHolder" style="height:360px">
                    <marquee style="position: relative;" behavior="scroll" align="center" direction="up" scrollamount="6" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()" margin-bottom="10px">
-                       
+
                         <div class="row">
                             <a class='col-md-12' href="profile.html" target="_blank">
                            AIJAA  Event 1: Jan 31 : National integration event at hyderabad. Students from all states will be performing at the Hyderabad convention center.
-                            </a>                            
+                            </a>
                         </div>
                           <div class="row">
                             <a class='col-md-12' href="profile.html" target="_blank">
                            AIJAA  Event 1: Jan 31 : National integration event at hyderabad. Students from all states will be performing at the Hyderabad convention center.
-                            </a>                            
+                            </a>
                         </div>
 
                         <div class="row">
                             <a class='col-md-12' href="profile.html" target="_blank">
                            AIJAA  Event 1: Jan 31 : National integration event at hyderabad. Students from all states will be performing at the Hyderabad convention center.
-                            </a>                            
+                            </a>
                         </div>
                         <div class="row">
                             <a class='col-md-12' href="profile.html" target="_blank">
                            AIJAA  Event 1: Jan 31 : National integration event at hyderabad. Students from all states will be performing at the Hyderabad convention center.
-                            </a>                            
-                        </div>                  
+                            </a>
+                        </div>
 
 
                     </marquee>
@@ -242,19 +189,19 @@ $(window).load(function() {
                 </div>
 
             </article>
-           
+
         </section>
-     
+
      </div>
-     <div class="row"> 
+     <div class="row">
         <section class="col-md-12" style="padding:0">
             <article class="contentSpan">
                 <div class="holder">
                     <h2>Our team</h2>
                     <em></em>
-                </div>               
-                 
-            </article>           
+                </div>
+
+            </article>
         </section>
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
               <!-- Indicators -->
@@ -286,14 +233,14 @@ $(window).load(function() {
                                                 <!-- Social Media -->
                                                 <span class="ui-social">
                                                     <!-- Facebook -->
-                                                    <i class="fa fa-facebook facebook"></i>           
+                                                    <i class="fa fa-facebook facebook"></i>
                                                     <i class="fa fa-linkedin linkedin"></i>
                                                     <!-- Google-Plus -->
                                                     <i class="fa fa-google-plus google-plus"></i>
                                                 </span>
                                             </span>
                                         </a>
-                                        
+
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
                                         <!-- Item -->
@@ -309,7 +256,7 @@ $(window).load(function() {
                                                 <!-- Social Media -->
                                                 <span class="ui-social">
                                                     <!-- Facebook -->
-                                                    <i class="fa fa-facebook facebook"></i>          
+                                                    <i class="fa fa-facebook facebook"></i>
                                                     <!-- Google-Plus -->
                                                     <i class="fa fa-google-plus google-plus"></i>
                                                 </span>
@@ -330,7 +277,7 @@ $(window).load(function() {
                                                 <!-- Social Media -->
                                                 <span class="ui-social">
                                                     <!-- Facebook -->
-                                                    <i class="fa fa-facebook facebook"></i>          
+                                                    <i class="fa fa-facebook facebook"></i>
                                                     <!-- LinkedIn -->
                                                     <i class="fa fa-linkedin linkedin"></i>
                                                     <!-- Google-Plus -->
@@ -363,11 +310,11 @@ $(window).load(function() {
                                         </a>
                         </div>
 
-                    
+
                 </div>
 
                 <div class="item">
-                 
+
                    <div class="carousel-caption" style="position: static;">
                         <h3>Management Team</h3>
                         <p>AIJAA PAN India Managment Team.</p>
@@ -387,7 +334,7 @@ $(window).load(function() {
                                                 <!-- Social Media -->
                                                 <span class="ui-social">
                                                     <!-- Facebook -->
-                                                    <i class="fa fa-facebook facebook"></i>    
+                                                    <i class="fa fa-facebook facebook"></i>
                                                     <!-- LinkedIn -->
                                                     <i class="fa fa-linkedin linkedin"></i>
                                                      <!-- Google-Plus -->
@@ -395,7 +342,7 @@ $(window).load(function() {
                                                 </span>
                                             </span>
                                         </a>
-                                        
+
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6 col-mob">
                                         <!-- Item -->
@@ -411,11 +358,11 @@ $(window).load(function() {
                                                 <!-- Social Media -->
                                                 <span class="ui-social">
                                                     <!-- Facebook -->
-                                                    <i class="fa fa-facebook facebook"></i>            
+                                                    <i class="fa fa-facebook facebook"></i>
                                                     <!-- LinkedIn -->
-                                                    <i class="fa fa-linkedin linkedin"></i>  
+                                                    <i class="fa fa-linkedin linkedin"></i>
                                                     <!-- Google-Plus -->
-                                                    <i class="fa fa-google-plus google-plus"></i> 
+                                                    <i class="fa fa-google-plus google-plus"></i>
                                                 </span>
                                             </span>
                                         </a>
@@ -459,7 +406,7 @@ $(window).load(function() {
                                                 <!-- Social Media -->
                                                 <span class="ui-social">
                                                     <!-- Facebook -->
-                                                    <i class="fa fa-facebook facebook"></i>           
+                                                    <i class="fa fa-facebook facebook"></i>
                                                     <!-- LinkedIn -->
                                                     <i class="fa fa-linkedin linkedin"></i>
                                                     <!-- Google-Plus -->
@@ -472,7 +419,7 @@ $(window).load(function() {
                 </div>
 
                 <div class="item">
-               
+
                    <div class="carousel-caption" style="position: static;">
                         <h3>Southeren Region Coordinators</h3>
                         <p>AIJAA Executive body of southern india.</p>
@@ -480,7 +427,7 @@ $(window).load(function() {
                 </div>
 
                 <div class="item">
-                
+
                    <div class="carousel-caption" style="position: static;">
                         <h3>Northern Region Coordinators</h3>
                     <p>AIJAA Executive body of Northern india.</p>
@@ -502,16 +449,7 @@ $(window).load(function() {
 </div>
 </div>
 <!--footer-->
-<footer>
-    <div class="container">
-        <div class="row">
-            <article class="span12 col-md-12">
-                <p>AIJAA &copy; 2016. <a href="index-5.html">Privacy Policy</a></p>
-            </article>
-            <!-- {%FOOTER_LINK} -->
-        </div>
-    </div>
-</footer>
+<?php include 'footer.php';?>
 
 <!-- Modal -->
 <div id="loginModal" class="modal fade" role="dialog">
@@ -520,7 +458,7 @@ $(window).load(function() {
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>       
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
         <div class="ui-105">
@@ -528,7 +466,7 @@ $(window).load(function() {
             <div class="ui-105-content">
                 <ul class="nav nav-tabs nav-justified">
                       <li class="active link-one"><a href="#login-block" data-toggle="tab"><i class="fa fa-sign-in"></i>Login </a></li>
-                      <li class="link-two"><a href="#register-block" data-toggle="tab"><i class="fa fa-pencil"></i>Register</a></li>                      
+                      <li class="link-two"><a href="#register-block" data-toggle="tab"><i class="fa fa-pencil"></i>Register</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active fade in" id="login-block">
@@ -598,7 +536,7 @@ $(window).load(function() {
                                     <input type="password" class="form-control" placeholder="Enter Password">
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label">Your Jnv State</label>                                   
+                                    <label class="control-label">Your Jnv State</label>
                                        <select class="form-control" id="state">
                                             <option value="">----Select State------</option>
                                             <option value="andaman">Andaman and Nicobar Islands</option>
@@ -654,7 +592,7 @@ $(window).load(function() {
                                 </div>
                                 <div class="form-group">
                                     <!-- Buton -->
-                                    <button type="submit" class="btn btn-red">Submit</button>&nbsp;                                   
+                                    <button type="submit" class="btn btn-red">Submit</button>&nbsp;
                                 </div>
                             </form>
                             </div>
@@ -676,7 +614,7 @@ $(window).load(function() {
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>       
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
             <div class="ui-105">
@@ -727,11 +665,11 @@ $(window).load(function() {
 </div>
 <script>
     $('.list2 li a').hover(function(){
-        $(this).stop().css({color:'#4b5aa7'});  
-        $(this).parent().siblings('span').stop().css({color:'#4b5aa7'});     
+        $(this).stop().css({color:'#4b5aa7'});
+        $(this).parent().siblings('span').stop().css({color:'#4b5aa7'});
             }, function(){
         $(this).stop().css({color:'#383535'});
-        $(this).parent().siblings('span').stop().css({color:'#ffcc03'});                         
+        $(this).parent().siblings('span').stop().css({color:'#ffcc03'});
     });
 
     function showAjaxModal()
@@ -742,12 +680,12 @@ $(window).load(function() {
         $('#modal-7 .modal-body').load(url);
 
     }
-            
+
             /* Owl Carousel */
             $(document).ready(function() {
 
                 var one = $("#owl-carousel-tab");
-                
+
                 one.owlCarousel({
                     autoPlay: 4000, //Set AutoPlay to 3 seconds
                     items : 5,
@@ -755,19 +693,19 @@ $(window).load(function() {
                     pagination : false,
                     stopOnHover:true
                 });
-                
+
                 $(".owl-next").click(function(){
                     one.trigger('owl.next');
                  })
-                  
+
                 $(".owl-prev").click(function(){
                     one.trigger('owl.prev');
                 })
 
             });
 
-            
-     
+
+
 
 </script>
 
