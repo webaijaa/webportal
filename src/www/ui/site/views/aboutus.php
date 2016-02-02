@@ -194,15 +194,6 @@ $(window).load(function() {
 
      </div>
      <div class="row">
-        <section class="col-md-12" style="padding:0">
-            <article class="contentSpan">
-                <div class="holder">
-                    <h2>Our team</h2>
-                    <em></em>
-                </div>
-
-            </article>
-        </section>
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
               <!-- Indicators -->
               <ol class="carousel-indicators">
