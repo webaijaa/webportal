@@ -2,25 +2,35 @@
 <body>
 
 <?php
-$mysqli = new mysqli("localhost", "root", "", "aijaa");
-if ($mysqli->connect_errno) {
-    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+$dbConnection = new mysqli("localhost", "root", "", "aijaa");
+if ($dbConnection->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $dbConnection->connect_errno . ") " . $dbConnection->connect_error;
 } else {
-	echo $mysqli->host_info . " connected to aijaa;\n";
+	echo $dbConnection->host_info . " connected to aijaa;\n";
 
-	$name = $_POST["name"];
+	
 	$email = $_POST["email"];
-	$phone = $_POST["phone"];
+	$password = $_POST["password"];
+	$firstname = $_POST["firstname"];
+	$lastname = $_POST["lastname"];
+	$phone = $_POST["phone"];	
+	$stateselected = $_POST["stateselected"];
+	$district = $_POST["district"];
 
-	echo "Received name & email phone : " . $name . $email . $phone ."\n";
+	echo "Received name & email phone : " . $firstname . $email . $phone . $password . $stateselected . $district . "\n";
 
-	$status = $mysqli->query("INSERT INTO user (name,email,phone) VALUES ('$name','$email','$phone')");
+	$sqlInsertUser = $dbConnection->query("INSERT INTO user (email,password,firstname,lastname,phone,state,district) VALUES 
+		('$email','$password','$firstname','$lastname','$phone','$stateselected','$district')");
 
-	echo "Status of the query " . $status;
+	if($sqlInsertUser === false){
+        trigger_error('Error: ' . $dbConnection->error, E_USER_ERROR);
+    }else{
+        echo 'Last inserted record is : ' . $email ; 
+    }
 
 	$sql = 'SELECT * FROM user';
 
-	if (!$result = $mysqli->query($sql)) {
+	if (!$result = $dbConnection->query($sql)) {
 	    // Oh no! The query failed. 
 	    echo "Sorry, the website is experiencing problems.";
 
@@ -28,8 +38,8 @@ if ($mysqli->connect_errno) {
 	    // to get the error information
 	    echo "Error: Our query failed to execute and here is why: \n";
 	    echo "Query: " . $sql . "\n";
-	    echo "Errno: " . $mysqli->errno . "\n";
-	    echo "Error: " . $mysqli->error . "\n";
+	    echo "Errno: " . $dbConnection->errno . "\n";
+	    echo "Error: " . $dbConnection->error . "\n";
 	    exit;
 	}
 
@@ -47,9 +57,9 @@ if ($mysqli->connect_errno) {
 // fetch it into an associated array where the array's keys are the 
 // table's column names
 	while($actor = $result->fetch_assoc()){
-	echo "Welcome to aijaa family " . $actor['name'] . " " . $actor['email'] . " " . $actor['phone'];
+	echo "Welcome to aijaa family " . $actor['firstname'] . " " . $actor['email'] . " " . $actor['phone'];
 	}
-	mysqli_close($mysqli);
+	mysqli_close($dbConnection);
 }
 ?>
 

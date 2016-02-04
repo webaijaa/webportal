@@ -33,6 +33,8 @@
 <script src="../assets/lib/jquery.flexslider.js"></script>
 <script src="../assets/lib/bootstrap/3.3.6/js/bootstrap.js"></script>
 <script src="../assets/lib/owl.carousel.min.js"></script>
+<script src="../js/ajaxform.js"></script>
+
 
 <script>
 $(window).load(function() {
@@ -163,26 +165,7 @@ $(window).load(function() {
 
 
         </section>
-        <section class="col-md-4" >
-            <article class="contentSpan" >
-                <div class="holder">
-                    <h2>Activities</h2>
-                    <em></em>
-                </div>
-                <div class="contentHolder" style="height:360px">
-                    <ul class="list2" >
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Carrer Guidence</a></div></li>
-                        <li ><span class="fa fa-hand-o-right"></span>
-                        <div><a href="#">PAn India Job Mela</a></div></li>
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Blood Donation Drives</a></div></li>
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Health Camps</a></div></li>
-                        <li><span class="fa fa-hand-o-right"></span><div><a href="#">Knowledge Bank : Learing Resources</a></div></li>
-                        <li><span class="fa fa-hand-o-right last" ></span><div><a href="#">National Integration Mission</a></div></li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">read more</a>
-                </div>
-            </article>
-        </section>
+        <?php include 'activitieslist.php'; ?>
         <section class="col-md-4">
             <article class="contentSpan"  >
                 <div class="holder">
@@ -232,6 +215,7 @@ $(window).load(function() {
 <?php include 'footer.php';?>
 <!-- Modal -->
 <?php include 'loginmodal.php';?>
+
 <!-- Modal -->
 <?php include 'contactmodal.php';?>
 

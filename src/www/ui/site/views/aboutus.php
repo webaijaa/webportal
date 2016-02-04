@@ -107,36 +107,16 @@ $(window).load(function() {
 
 <div class="container">
     <div class="row">
-      <section class="col-md-4" >
-          <article class="contentSpan" >
-              <div class="holder">
-                  <h2>Activities</h2>
-                  <em></em>
-              </div>
-              <div class="contentHolder" style="height:360px">
-                  <ul class="list2" >
-                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Carrer Guidence</a></div></li>
-                      <li ><span class="fa fa-hand-o-right"></span>
-                      <div><a href="#">PAn India Job Mela</a></div></li>
-                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Blood Donation Drives</a></div></li>
-                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Health Camps</a></div></li>
-                      <li><span class="fa fa-hand-o-right"></span><div><a href="#">Knowledge Bank : Learing Resources</a></div></li>
-                      <li><span class="fa fa-hand-o-right last" ></span><div><a href="#">National Integration Mission</a></div></li>
-                  </ul>
-                  <a href="#" class="btn btn-primary">read more</a>
-              </div>
-          </article>
-      </section>
         <SECTION class="col-md-8">
-                            <H1>ABOUT</H1>
-                            <h3>AIJAA is a fast-growing, innovative Navodaya students association</h3>
-                            <p>Managing Director <a href="/team/richard-jennis">Richard Jennis</a> and Technical Director <a href="/team/stephen-tang">Stephen Tang</a> founded the company in 2008, right at the start of the credit crunch, which many thought was a huge risk.  But of course, the risk paid off and our list of clients has grown quickly.  We've also had to move office three times to accommodate our rapidly expanding team.</p>
-                            <p><a href="/team/claire-thorpe">Claire Thorpe</a> joined the agency as Consultancy Director in 2010, which meant that we could expand our services to include <a href="/pay-per-click-marketing-ppc">online marketing</a>, <a href="/search-engine-optimisation-seo">SEO</a>, social media and <a href="/user-experience-research-ux-consultancy">user experience</a> projects.</p>
-                            <p>Engagement is at the core of everything we do - we work collaboratively and see ourselves as an extension of our clients' teams.  In fact, it's not unusual for us to work from our clients' offices a few times during a project; it really helps us to get to know your team and business.</p>
-                            <p>Our approach is user-centric, meaning that we always keep your users wants and needs at the forefront of our mind at every single stage of the project.  We aim to factor in a <a href="/user-experience-research-ux-consultancy">user experience (UX)</a> stage at the beginning of all projects - we see it as an important investment which will save you time and redevelopment costs in future.</p>
-                            <p>We run workshops on subjects such as internet legislation, web usability, writing for the web and social media - sharing our knowledge with others and proving that we really do know our stuff.</p>
-                            <p>And we don't like to sit still.  We've developed our own <a href="/content-management-system-cms">Content Management System (CMS)</a> so that we can give our clients complete control and flexibility to manage their website in the way they want. Most importantly, we're constantly developing and improving it.  And we know that mobile is growing at a huge rate, so we've expanded our team to include mobile app developers.</p>
-                            <h3>Essentially - we're future-proof.</h3>
+            <H1>ABOUT</H1>
+            <h3>AIJAA is a fast-growing, innovative Navodaya students association</h3>
+            <p>Managing Director <a href="/team/richard-jennis">Richard Jennis</a> and Technical Director <a href="/team/stephen-tang">Stephen Tang</a> founded the company in 2008, right at the start of the credit crunch, which many thought was a huge risk.  But of course, the risk paid off and our list of clients has grown quickly.  We've also had to move office three times to accommodate our rapidly expanding team.</p>
+            <p><a href="/team/claire-thorpe">Claire Thorpe</a> joined the agency as Consultancy Director in 2010, which meant that we could expand our services to include <a href="/pay-per-click-marketing-ppc">online marketing</a>, <a href="/search-engine-optimisation-seo">SEO</a>, social media and <a href="/user-experience-research-ux-consultancy">user experience</a> projects.</p>
+            <p>Engagement is at the core of everything we do - we work collaboratively and see ourselves as an extension of our clients' teams.  In fact, it's not unusual for us to work from our clients' offices a few times during a project; it really helps us to get to know your team and business.</p>
+            <p>Our approach is user-centric, meaning that we always keep your users wants and needs at the forefront of our mind at every single stage of the project.  We aim to factor in a <a href="/user-experience-research-ux-consultancy">user experience (UX)</a> stage at the beginning of all projects - we see it as an important investment which will save you time and redevelopment costs in future.</p>
+            <p>We run workshops on subjects such as internet legislation, web usability, writing for the web and social media - sharing our knowledge with others and proving that we really do know our stuff.</p>
+            <p>And we don't like to sit still.  We've developed our own <a href="/content-management-system-cms">Content Management System (CMS)</a> so that we can give our clients complete control and flexibility to manage their website in the way they want. Most importantly, we're constantly developing and improving it.  And we know that mobile is growing at a huge rate, so we've expanded our team to include mobile app developers.</p>
+            <h3>Essentially - we're future-proof.</h3>
         </SECTION>
 
 
@@ -144,7 +124,7 @@ $(window).load(function() {
 </div>
 <div class="container padBot">
     <div class="row">
-        <section class="col-md-6" >
+        <section class="col-md-4" >
             <div class="banner2" style="height:155px">
                 <p class="title1"> About Us </p>
                 <p class="title2"> AIJAA is a fast-growing, innovative Student group from all India Jawahar Navodaya Vidyalayas.</p>
@@ -160,7 +140,9 @@ $(window).load(function() {
 
         </section>
 
-        <section class="col-md-6">
+        <?php include 'activitieslist.php'; ?>
+
+        <section class="col-md-4">
             <article class="contentSpan"  >
                 <div class="holder">
                     <h2>News & Events</h2>

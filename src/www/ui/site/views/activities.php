@@ -123,7 +123,6 @@ $(window).load(function() {
                       <li><span class="fa fa-hand-o-right"></span><div><a href="#">Knowledge Bank : Learing Resources</a></div></li>
                       <li><span class="fa fa-hand-o-right last" ></span><div><a href="#">National Integration Mission</a></div></li>
                   </ul>
-                  <a href="#" class="btn btn-primary">read more</a>
               </div>
           </article>
       </section>

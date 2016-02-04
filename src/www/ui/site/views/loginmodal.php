@@ -27,13 +27,13 @@
                                 <!-- Form Group -->
                                 <div class="form-group">
                                     <!-- Label -->
-                                    <label class="control-label">Username</label>
+                                    <label for="email" class="control-label">E-mail address</label>
                                     <!-- Input -->
-                                    <input type="text" class="form-control" placeholder="Enter Username">
+                                    <input type="email" class="form-control" placeholder="Enter E-mail address" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label">Password</label>
-                                     <input type="password" class="form-control" placeholder="Enter Password">
+                                     <input type="password" class="form-control" placeholder="Enter Password" required>
                                 </div>
                                 <div class="form-group">
                                     <div class="checkbox">
@@ -61,29 +61,36 @@
                             <!-- Border -->
                             <div class="bor bg-lblue"></div>
                             <!-- Form -->
-                            <form class="form" action="../php/register.php" method="post" role="form">
+                            <form class="ajaxform" action="../php/register.php" method="post" role="form">
                                 <!-- Form Group -->
                                 <div class="form-group">
-                                    <!-- Label -->
-                                    <label class="control-label">Name</label>
-                                    <!-- Input -->
-                                    <input type="text" name="name" class="form-control"  placeholder="Enter Name">
+                                    <label for="email" class="control-label">Email</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label">Email</label>
-                                    <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                                    <label class="control-label">Password</label>
+                                    <input type="password" name="password" class="form-control" placeholder="Enter Password" required>
+                                </div>
+                                <div class="form-group">
+                                    <!-- Label -->
+                                    <label class="control-label">First Name</label>
+                                    <!-- Input -->
+                                    <input type="text" name="firstname" class="form-control"  placeholder="Enter First Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <!-- Label -->
+                                    <label class="control-label">Last Name</label>
+                                    <!-- Input -->
+                                    <input type="text" name="lastname" class="form-control"  placeholder="Enter Last Name" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label">Phone</label>
                                     <input type="number"  name="phone" class="form-control" placeholder="Enter phone number">
                                 </div>
-                                <div class="form-group">
-                                    <label class="control-label">Password</label>
-                                    <input type="password" class="form-control" placeholder="Enter Password">
-                                </div>
+                                
                                 <div class="form-group">
                                     <label class="control-label">Your Jnv State</label>
-                                       <select class="form-control" id="state">
+                                       <select class="form-control" name="stateselected"id="state" required>
                                             <option value="">----Select State------</option>
                                             <option value="andaman">Andaman and Nicobar Islands</option>
                                             <option value="andhra">Andhra Pradesh</option>
@@ -126,13 +133,13 @@
                                     <!-- Label -->
                                     <label class="control-label">Your JNV District</label>
                                     <!-- Input -->
-                                    <input type="text" class="form-control" name="district"  placeholder="Enter Name of JNV">
+                                    <input type="text" class="form-control" name="district"  placeholder="Enter Name of JNV" required>
                                 </div>
                                 <div class="form-group">
                                     <!-- Checkbox -->
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox"> Agree with terms and conditions
+                                            <input type="checkbox" required> Agree with terms and conditions
                                         </label>
                                     </div>
                                 </div>
@@ -141,6 +148,7 @@
                                     <button type="submit" class="btn btn-red">Submit</button>&nbsp;
                                 </div>
                             </form>
+                            <div id="register-result"></div>
                             </div>
                         </div>
                     </div><!-- tAB PANE -->
